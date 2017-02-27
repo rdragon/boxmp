@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>boxmp</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts/dist/jquery-3.1.1.min.js"></script>
+  <script src="scripts/dist/underscore.min.js"></script>
+  <script data-main="scripts/game" src="scripts/dist/require.js"></script>
+</head>
+<body>
+  <canvas></canvas>
+  <div id="score" class="ingame">
+    <span id="winmsg"></span>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th class="alignleft">Name</th>
+          <th>Kills</th>
+          <th>Deaths</th>
+          <th>Rounds<br>won</th>
+          <th>Rounds<br>played</th>
+          <th>Ping</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="timebox">
+      <span id="time"></span>
+    </div>
+  </div>
+  <input type="text" id="name" placeholder="Your name here">
+  <input type="text" id="chatbox" placeholder="Send message here">
+  <ul id="kills"></ul>
+  <ul id="log"></ul>
+  <div id="status"></div>
+</body>
+</html>

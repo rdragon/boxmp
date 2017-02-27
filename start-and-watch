@@ -1,0 +1,7 @@
+#!/bin/bash
+coffee --bare --compile --watch server.coffee public/scripts/ &
+while [[ ! -f server.js || ! -f public/scripts/config.js || ! -f public/scripts/helper.js ]]
+do
+    sleep 1
+done
+supervisor --watch server.js,public/scripts/config.js,public/scripts/helper.js --no-restart-on exit server.js
