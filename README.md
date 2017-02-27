@@ -3,7 +3,7 @@ Two-dimensional multiplayer game with physics. Each client runs its own physics 
 
 Not all actions have a delay, as that would make the game very hard to play. Only actions that affect the physics world need a delay. At the moment these are firing and grabbing an object. Player movement has no delay. Hence, there can be no pushing or pulling of objects. Collisions between the player and objects in the physics world are resolved as if the player has zero mass. The player just gets pushed around without affecting the movement of these objects.
 
-Play the game at [http://www.gomoku-ai.ewps.nl](http://www.gomoku-ai.ewps.nl).
+Play the game at [http://www.boxmp.ewps.nl](http://www.boxmp.ewps.nl).
 
 ## Goal
 Try to make the most kills before the round ends.
@@ -39,7 +39,7 @@ At the moment it is possible that the physics simulations of the clients become 
 It happens when the JavaScript engines of the clients produce different outputs for the same input. There has been an attempt to reduce this problem by rounding the return values of calls to `Math.sin`, `Math.cos`, `Math.asin` and the like. To completely solve this issue it must be possible for the clients to synchronize their state.
 
 ## Cheat protection
-As of yet there is no cheat protection. This makes the development of the game a lot easier. Also some gameplay elements are only possible if the clients can be trusted. 
+As of yet there is no cheat protection. This makes the development of the game a lot easier. Also some gameplay elements are only possible if the clients can be trusted.
 
 ## Special thanks
 - [Box2D](http://box2d.org/) for the physics engine
