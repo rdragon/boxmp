@@ -3,8 +3,6 @@ Two-dimensional multiplayer game with physics. Each client runs its own physics 
 
 Not all actions have a delay, as that would make the game very hard to play. Only actions that affect the physics world need a delay. At the moment these are firing and grabbing an object. Player movement has no delay. Hence, there can be no pushing or pulling of objects. Collisions between the player and objects in the physics world are resolved as if the player has zero mass. The player just gets pushed around without affecting the movement of these objects.
 
-Play the game at [http://www.boxmp.ewps.nl](http://www.boxmp.ewps.nl).
-
 ## Goal
 Try to make the most kills before the round ends.
 
